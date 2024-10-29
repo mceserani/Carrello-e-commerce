@@ -1,0 +1,88 @@
+/* Stile generale */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+/* Titoli */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Tabelle */
+table {
+    width: 90%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Pulsanti */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Totale */
+#total {
+    font-size: 1.5em;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Design responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+    table {
+        width: 100%;
+    }
+    #total {
+        width: 100%;
+        font-size: 1.3em;
+    }
+}
