@@ -21,8 +21,12 @@ carrello.forEach(function(prodotto) {
     td = document.createElement("td");
     td.textContent = prodotto.costo_unitario + "€";
     tr.appendChild(td);
+
+    td = document.createElement("td");
+    td.textContent = "Quantità: " + prodotto.quantita;
+    tr.appendChild(td);
     
-    costoTotale += prodotto.costo_unitario;
+    costoTotale += prodotto.costo_unitario * prodotto.quantita;
     
     document.getElementById("cart").appendChild(tr);
 });

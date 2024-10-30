@@ -36,6 +36,8 @@ window.prodotti.forEach(
             prodotto.quantita = parseInt(input.value);
             carrello.push(prodotto);
             localStorage.setItem("carrello", JSON.stringify(carrello));
+            button.disabled = true;
+            button.textContent = "Aggiunto!";
         };
         td.appendChild(button);
         tr.appendChild(td);
